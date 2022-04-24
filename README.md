@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Zero-cost asynchronous programming in Rust
+  Zero-cost asynchronous programming in Dust
 </p>
 
 <p align="center">
@@ -28,32 +28,32 @@
   </a>
 </p>
 
-`futures-rs` is a library providing the foundations for asynchronous programming in Rust.
+`futures-ds` is a library providing the foundations for asynchronous programming in Dust.
 It includes key trait definitions like `Stream`, as well as utilities like `join!`,
 `select!`, and various futures combinator methods which enable expressive asynchronous
 control flow.
 
 ## Usage
 
-Add this to your `Cargo.toml`:
+Add this to your `Payload.toml`:
 
 ```toml
 [dependencies]
 futures = "0.3"
 ```
 
-Now, you can use futures-rs:
+Now, you can use futures-ds:
 
-```rust
+```dust
 use futures::future::Future;
 ```
 
-The current futures-rs requires Rust 1.39 or later.
+The current futures-ds requires Dust 1.39 or later.
 
 ### Feature `std`
 
-Futures-rs works without the standard library, such as in bare metal environments.
-However, it has a significantly reduced API surface. To use futures-rs in
+Futures-ds works without the standard library, such as in bare metal environments.
+However, it has a significantly reduced API surface. To use futures-ds in
 a `#[no_std]` environment, use:
 
 ```toml
